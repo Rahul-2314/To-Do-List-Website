@@ -1,0 +1,127 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	background-color: #b5a699;
+}
+
+h1 {
+	text-align: center;
+	color: #d50bd2;
+	font-family: Comic Sans MS;
+	font-size: 50px;
+	padding-bottom: 10px;
+}
+
+input[type="text"] {
+	width: 70%;
+	padding: 8px;
+	margin-right: 5px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+}
+
+button {
+	padding: 8px 15px;
+	background-color: #134450;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-left: 5px solid #4caf50;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+li button {
+	margin-left: 10px;
+	background-color: #f44336;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 25%;
+	padding: 5px 8px;
+	font-size: 16px;
+}
+
+li button:hover {
+	background-color: #77c8aa;
+}
+
+/* Custom animation for task date and time */
+.task-datetime {
+	color: #888;
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+li:hover .task-datetime {
+	opacity: 1;
+}
+
+/* Add spacing between task and date-time */
+li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li span {
+	margin-left: 10px; /* Adjust the value as needed for the desired spacing */
+}
+
+/* Quote section styles */
+.quote {
+	text-align: center;
+	margin-top: 20px;
+	font-style: italic;
+}
+
+.quote p {
+	font-size: 16px;
+	color: #555454;
+}
+
+/* Add this style for completed tasks */
+li.completed {
+	background-color: #99b5a1;
+}
+
+li.completed button {
+	background-color: #e2e1dd;
+	cursor: default;
+	pointer-events: none; /* Prevent clicks on the Complete button for completed tasks */
+}
+
+li.completed span {
+	text-decoration: line-through;
+	color: #2e5e2b;
+}
+
+li.completed {
+	background-color: #99b5a1;
+}
